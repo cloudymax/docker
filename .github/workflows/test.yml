@@ -375,6 +375,10 @@ jobs:
           projectPath: reference-project-test
           targetPlatform: ${{ matrix.platform }}
           allowDirtyBuild: true
+        env:
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
 
       ###########################
       #   Build (Ubuntu GZip)   #
@@ -394,6 +398,10 @@ jobs:
           projectPath: reference-project-test
           targetPlatform: ${{ matrix.platform }}
           allowDirtyBuild: true
+        env:
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
 
       #############################
       #   Build (Ubuntu Brotli)   #
@@ -413,6 +421,10 @@ jobs:
           projectPath: reference-project-test
           targetPlatform: ${{ matrix.platform }}
           allowDirtyBuild: true
+        env:
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
 
       ############
       #   Test   #
